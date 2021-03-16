@@ -1,0 +1,19 @@
+{
+  "buildFiles": [
+    "F:\\AndroidSDK\\ndk\\20.0.5594570\\build\\cmake\\android.toolchain.cmake",
+    "D:\\SmartCamera\\smartcameralib\\CMakeLists.txt",
+    "F:\\AndroidSDK\\ndk\\20.0.5594570\\build\\cmake\\platforms.cmake"
+  ],
+  "cleanCommands": [
+    "F:\\AndroidSDK\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\SmartCamera\\smartcameralib\\.cxx\\cmake\\release\\x86\" clean"
+  ],
+  "buildTargetsCommand": "F:\\AndroidSDK\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"D:\\SmartCamera\\smartcameralib\\.cxx\\cmake\\release\\x86\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "smart_camera-Release-x86": {
+      "artifactName": "smart_camera",
+      "buildCommand": "F:\\AndroidSDK\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\SmartCamera\\smartcameralib\\.cxx\\cmake\\release\\x86\" smart_camera",
+      "abi": "x86",
+      "output": "D:\\SmartCamera\\smartcameralib\\build\\intermediates\\cmake\\release\\obj\\x86\\libsmart_camera.so"
+    }
+  }
+}

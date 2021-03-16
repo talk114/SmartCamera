@@ -1,0 +1,5 @@
+# ninja log v5
+7	3433	637594234	CMakeFiles/smart_camera.dir/src/main/cpp/android_utils.cpp.o	9c816d3da70cade7
+1	3573	637594234	CMakeFiles/smart_camera.dir/src/main/cpp/opencv_utils.cpp.o	ec227869e7b1aa31
+11	3702	637594234	CMakeFiles/smart_camera.dir/src/main/cpp/smart_camera.cpp.o	b4b654f994278be7
+3702	4237	637594235	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libsmart_camera.so	e35210c238fab9af

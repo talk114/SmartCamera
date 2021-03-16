@@ -15,10 +15,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.google.android.cameraview.CameraImpl;
-import com.tbruyelle.rxpermissions2.RxPermissions;
 
-import io.reactivex.Observer;
-import io.reactivex.disposables.Disposable;
 import me.pqpo.smartcameralib.MaskView;
 import me.pqpo.smartcameralib.SmartCameraView;
 import me.pqpo.smartcameralib.SmartScanner;
@@ -60,36 +57,6 @@ public class MainActivity extends AppCompatActivity {
         initScannerParams();
         initCameraView();
 
-        new RxPermissions(this).request(Manifest.permission.CAMERA)
-                .subscribe(new Observer<Boolean>() {
-                    @Override
-                    public void onSubscribe(Disposable d) {
-
-                    }
-
-                    @Override
-                    public void onNext(Boolean granted) {
-                        MainActivity.this.granted = granted;
-                        if (granted) {
-                            MaskView maskView = (MaskView) mCameraView.getMaskView();
-                            maskView.setShowScanLine(true);
-                            mCameraView.start();
-                            mCameraView.startScan();
-                        } else {
-                            Toast.makeText(MainActivity.this, "请开启相机权限！", Toast.LENGTH_LONG).show();
-                        }
-                    }
-
-                    @Override
-                    public void onError(Throwable e) {
-
-                    }
-
-                    @Override
-                    public void onComplete() {
-
-                    }
-                });
     }
 
     private void initScannerParams() {
